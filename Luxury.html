@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>
+  <title>Cart of the Future</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div id="navBar" class="row" style="background: black;">
+      <div class="col-md-10" style="padding: 30px; padding-left: 40px;">  
+        <div class="pull-left">
+          <ul class="nav nav-pills">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="College.html">College</a></li>
+            <li><a href="Credit.html">Credit</a></li>
+            <li><a href="Family.html">Family</a></li>
+            <li class="active"><a href="Luxury.html">Luxury</a></li>
+            <li><a href="Budget.html">Budget</a></li>
+            <li><a href="Career.html">Career</a></li>
+          </ul>
+        </div> 
+      </div>
+      <a href="Summary.html">  
+        <div class="col-md-2" id="cart">
+          <img src="http://www.thejordanplug.com/wp-content/uploads/2017/07/shoppingcart7.png" width="30%">
+          <h3>CheckOut</h3>
+        </div> 
+      </a>  
+    </div><br>  
+    
+  <h1>Home:</h1>       
+  <div class="description">
+    <p>&emsp;Home is the second most important place beside the workplace. For a few poeple, it will be the only place ebeside work. Here, one have kid, cook, and sleep in. A good location can be convenience for walking to work or maybe it have the desired nighttime silence. Whatever the case is, home can decide one's mood in the days to come. Choose wisely and buy cheaply because they are expensive. Ask an estate agent for help, maybe at <a href="https://www.redfin.com" target="_blank" class="normalLink">RedFin</a> or <a href="https://www.rentals.com" target="_blank" class="normalLink">Rental.com</a> since they are not block in the APP Academy computer.</p>
+  </div><br>
+  <div class="container">
+    <!-- Row -->  
+    <div class="row">
+      <div class="col-md-3 notActive" id="luxury_Home1" onclick="selectOption('luxury_Home', 1)">
+        <img src="https://image.rentals.com//imgr/a71d7af13d6e223b8eeb9741023ef19f/-250" class="img" width="100%"><br><br> 
+        <div>
+          <a href="https://www.rentals.com/California/Pasadena/174258/" class="normalLink" target="_blank"><h4 id="luxury_Home1option">Apartment(rent):</h4></a>
+          <p>When one is still poor, renting is a decent option while waiting to buy the castle of one's dream. Here is Wright's Apartment in Pasadena. It have 1 bedroom and 1 bathroom. Not too shabby, but beware of their one-year lease term.</p><br><br>
+          <p class="popup" onclick="popupFunction('luxury_Home', 1)">Price: $<span id="luxury_Home1price">14400<span class="popuptext" id="luxury_Home1PopupText">Compostion:<br>Price: $1200 per month</span></span> per year.</p>   
+        </div>
+      </div>
+      <div class="col-md-1"></div>  
+      <div class="col-md-3 notActive" id="luxury_Home2" onclick="selectOption('luxury_Home', 2)">
+        <img src="https://image.rentals.com//imgr/5b289165a0aa1ef7ea379ad7e55b2dc3/-250" class="img" width="100%"><br><br> 
+        <div>
+          <a href="https://www.rentals.com/California/El-Monte/100035797/" class="normalLink" target="_blank"><h4 id="luxury_Home2option">Garage(rent):</h4></a>
+          <p>The name is Shady Lane Trailer Park. Literally, you live in a trailer. Though, there will be air conditioning and a stove, so you will be fine. Not to mention, the utilities bills are covered! Well, except for electricty, but it is cheap!</p><br><br>
+          <p class="popup" onclick="popupFunction('luxury_Home', 2)">Price: $<span id="luxury_Home2price">8340<span class="popuptext" id="luxury_Home2PopupText">Compostion:<br>Price = $695 per month</span></span> per year.</p>   
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3 notActive" id="luxury_Home3" onclick="selectOption('luxury_Home', 3)">
+        <img src="https://ssl.cdn-redfin.com/photo/45/mbpaddedwide/394/genMid.WS18083394_0.jpg" class="img" width="100%"><br><br> 
+        <div>
+          <a href="https://www.redfin.com/CA/San-Gabriel/6730-Rosemead-Blvd-91775/home/7044087" class="normalLink" target="_blank"><h4 id="luxury_Home3option">Condo:</h4></a>
+          <p>A medium sized house  build in 1979. It have 2 beds and 2.5 bathrooms. Perfect for a growing family. Even better, the condo lies within Temple City School District, giving exposure to more "diverse" ethinity groups.</p><br><br>
+          <p>Price: $<span id="luxury_Home3price">568000</span>.</p>   
+        </div>
+      </div>  
+    </div><br><br>
+    <div class="row">
+      <div class="col-md-3 notActive" id="luxury_Home4" onclick="selectOption('luxury_Home', 4)">
+        <img src="https://ssl.cdn-redfin.com/photo/45/mbpaddedwide/869/genMid.OC18036869_28_1.jpg" class="img" width="100%"><br><br> 
+        <div>
+          <a href="https://www.redfin.com/CA/Pasadena/527-Douglas-St-91104/home/7193619" class="normalLink" target="_blank"><h4 id="luxury_Home4option">Private Home:</h4></a>
+          <p>A homely home build in 1914, it is in a strategic location close to the Rose Bowl and Caltech. With 2 bedrooms and 2 bathrooms, it is sufficent for any small family. Its price is also decent, though the biggest cost will be from watering that huge lawn.</p><br><br>
+          <p>Price: $<span id="luxury_Home4price">869000</span>.</p>   
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div style="margin-left: 30px; margin-right: -80px;">  
+          <p>&emsp;Not everyone can afford to pay for the house upfront and that is why we have mortage. It is a loan from the bank or creditor, in which there is a common agreement that the bank/creditor will be owner of the property until the debt is paid off. This is good because at least this way, one can afford a home. Note that down payment is paid upfront. This is beneficial because it will reduce the amount of money being compounded monthly. That money is how creditors made their profit and it can be steep. Failure to paid back is a complete confiscation of the property. Yikes.</p>  
+        </div><br><br>    
+        <div class="mortageSpace">  
+          <div class="row">
+            <div class="col-md-7" style="border-right: 2px solid white;">  
+              <p class="inputTitle">Find Mortage Plan:</p><br><br>
+              <p class="inputTitle">Price: </p>  
+              <input type="text" id="luxury_HomePriceInput" value=""><br>
+              <p class="inputTitle">Down Payment (%): </p>  
+              <input type="text" id="luxury_HomeDownPaymentInput" value="10"><br>
+              <P class="inputTitle">Time (months): </P>  
+              <input type="text" id="luxury_HomeTimeInput" value="60"><br>
+              <p class="inputTitle">Interest Rate (%): </p>  
+              <input type="text" id="luxury_HomeInterestInput" value="3.5"><br><br>
+              <button onclick="calculateInput('luxury_Home')" id="luxury_HomeButton">Calculate</button><br><br>
+            </div>
+            <div class="col-md-5">
+              <p id="luxury_HomeButtonOutput" class="inputAnswer"></p>       
+            </div>  
+          </div>
+        </div> 
+      </div>
+    </div><br><br>
+  </div>  
+  <!-- End Row -->  
+
+  <h1>Automobile:</h1>       
+  <div class="description">
+    <p>&emsp;My mom I hate car, my dad love car, and I am just eh. I don't love to drive, but I can see why it is necessary. To get to places quicker and carry those heavy loads. It is hard to push around them 20 lbs bag of rice from the supermarket to home. But in the perfect world, ,car will not the exist. They produce harmful CO<sub>2</sub>, which lead to greenhouse effects. Woo, I feel hotter already. This is why, I prefer electric cars like Tesla. They are not guilt free, but the energy production is at least cleaner in comparision to gasoline. For more information, try this website, <a href="https://www.cars.com/shopping/" target="_blank" class="normalLink">Cars.com</a>. I am not the one to seek advice when looking for cars.</p>
+  </div><br>
+  <div class="container">
+    <!-- Row -->  
+    <div class="row">
+      <div class="col-md-3 notActive" id="luxury_Automobile1" onclick="selectOption('luxury_Automobile', 1)">
+        <img src="https://www.futurefordclovis.com/assets/stock/expanded/white/640/2017fos100002_640/2017fos100002_640_07.jpg" class="img" width="100%"><br><br> 
+        <div>
+          <a href="https://www.ford.com/suvs/explorer/models/explorer-limited/" class="normalLink" target="_blank"><h4 id="luxury_Automobile1option">Ford Explorer:</h4></a>
+          <p>Here is a car. It have a heating on the steering wheel so one never have to worry about cold hand. Not to mention, it is roomy and it is new. This car can survive the road for a good few years. At least until electric car break the market.</p><br><br>
+          <p>Price: $<span id="luxury_Automobile1price">42090</span>.</p>   
+        </div>
+      </div>
+      <div class="col-md-1"></div>  
+      <div class="col-md-3 notActive" id="luxury_Automobile2" onclick="selectOption('luxury_Automobile', 2)">
+        <img src="https://c4d709dd302a2586107d-f8305d22c3db1fdd6f8607b49e47a10c.ssl.cf1.rackcdn.com/thumbnails/stock-images/dc4696f01dc513af28c2d06e994a9454.png" class="img" width="100%"><br><br> 
+        <div>
+          <a href="https://www.toyota.com/highlanderhybrid/" class="normalLink" target="_blank"><h4 id="luxury_Automobile2option">Toyota Highlander Hybrid:</h4></a>
+          <p>Another roomy car, this one have All Wheel Drive and cool cameras feature. Bewarn that it is going to beep quite often as warning. That can be good and annoying. This car will also stay in the market for another few years.</p><br><br>
+          <p>Price: $<span id="luxury_Automobile2price">36670</span>.</p>   
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3 notActive" id="luxury_Automobile3" onclick="selectOption('luxury_Automobile', 3)">
+        <img src="https://www.subaru.com/content/dam/subaru/preprod/2019-ascent-preprod/gallery/exterior/33.jpg" class="img" width="100%"><br><br> 
+        <div>
+          <a href="https://www.subaru.com/ascent" class="normalLink" target="_blank"><h4 id="luxury_Automobile3option">Subaru Ascent:</h4></a>
+          <p>Another roomy car, this one also have All Wheel Drive so it can stick to the ground and not veer off the street on rainy day. Connectable to the StarLink App, so you can always ensure that your car is toasty warm before entering on a cold winter day.</p><br><br>
+          <p>Price: $<span id="luxury_Automobile3price">31995</span>.</p>   
+        </div>
+      </div>  
+    </div><br><br>
+    <div class="row">
+      <div class="col-md-3 notActive" id="luxury_Automobile4" onclick="selectOption('luxury_Automobile', 4)">
+        <img src="https://www.zakelijkelektrischleasen.nl/wp-content/uploads/2017/10/Tesla-Model-S-leasen.png" class="img" width="100%" style="transform: scaleX(-1)"><br><br> 
+        <div>
+          <a href="https://www.tesla.com/model3" class="normalLink" target="_blank"><h4 id="luxury_Automobile4option">Tesla Model 3:</h4></a>
+          <p>Finally, an electric car to go green! With just hours of charging, this car can go for 220 miles nonstop. That is really good in comparison to older car. Not to mention, it does not make any sound and the lack of engines provide more room for storage.</p><br><br>
+          <p>Price: $<span id="luxury_Automobile4price">35000</span>.</p>   
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div style="margin-left: 30px; margin-right: -80px;">  
+          <p>&emsp;Not everyone can afford to pay for a car upfront and that is why we have mortage. It is a loan from the bank or creditor, in which there is a common agreement that the bank/creditor will be owner of the property until the debt is paid off. This is good because at least this way, one can afford an automobile. Note that down payment is paid upfront. This is beneficial because it will reduce the amount of money being compounded monthly. That money is how creditors made their profit and it can be steep. Failure to paid back is a complete confiscation of the property. Yikes.</p>  
+        </div><br><br>    
+        <div class="mortageSpace">  
+          <div class="row">
+            <div class="col-md-7" style="border-right: 2px solid white;">  
+              <p class="inputTitle">Find Mortage Plan:</p><br><br>
+              <p class="inputTitle">Price: </p>  
+              <input type="text" id="luxury_AutomobilePriceInput" value=""><br>
+              <p class="inputTitle">Down Payment (%): </p>  
+              <input type="text" id="luxury_AutomobileDownPaymentInput" value="10"><br>
+              <P class="inputTitle">Time (months): </P>  
+              <input type="text" id="luxury_AutomobileTimeInput" value="60"><br>
+              <p class="inputTitle">Interest Rate (%): </p>  
+              <input type="text" id="luxury_AutomobileInterestInput" value="3.5"><br><br>
+              <button onclick="calculateInput('luxury_Automobile')" id="luxury_AutomobileButton">Calculate</button><br><br>
+            </div>
+            <div class="col-md-5">
+              <p id="luxury_AutomobileButtonOutput" class="inputAnswer"></p>       
+            </div>  
+          </div>
+        </div> 
+      </div>
+    </div><br><br>
+  </div>  
+  <!-- End Row -->  
+
+      
+  <h1>Insurance:</h1>       
+  <div class="description">
+    <p>&emsp; Tradgedy happens and to lessen their impact, one can buy insurances. That may or may not include any of the selection below, but one is required by federal law to have insurance. Insurance is a monthly "investment" (they just target your salary), and will return a huge sum whenever the requirements are met. Most companies hope that the requirements will never be met, but that is beside the point. Insurance can be categorized into home, life, auto, and etc. Literally anything can have insurance, but auto insurance is the most commonly provided by essentially all companies. This is one website that briefly explain <a href="http://understandinsurance.com.au/insurance-explained" target="_blank" class="normalLink">insurance</a>.<br>&emsp;Anyhow, the terms used by professional can be confusing so here are a few. "Deductible" is the amount that one must pay before the insurance chip in. Best to have it low. "Coinsurance" is the amount that the insurance will chip in (in percent). "Copayment" is the amount you have to paid after the insurance covered some of it (in dollar). "Insurance Policy" is the terms and conditions of the contract. "Insurance Premium" is how much you paid to the insurance each month. AKA: The income of the insurance company. So yeah, that is the basics. There are others, but it is best for me to leave it <a href="http://www.naic.org/consumer_glossary.htm" target="_blank" class="normalLink">Naic.org</a> because it can be quite lengthy.</p>
+  </div><br>
+  <div class="container">
+    <!-- Row -->  
+    <div class="row">
+      <div class="col-md-3 notActive" id="luxury_Insurance1" onclick="selectMultipleOptions('luxury_Insurance', 1)">
+        <img src="http://nagps.org/newsite/wp-content/uploads/2017/02/geico-logo.png" class="img"><br><br> 
+        <div>
+          <a href="https://www.geico.com/" class="normalLink" target="_blank"><h4 id="luxury_Insurance1option">GEICO:</h4></a>
+          <p>15 minutes can save 15% or more on car insurance! Presented by Geico. Well, Geico just another auto insurance. The second biggest in America, but name doesn't mean everything. However, it does have an excellent mobile app and a virtual assistant named Kate.</p><br><br>
+          <p class="popup" onclick="popupFunction('luxury_Insurance', 1)">Price: $<span id="luxury_Insurance1price">3852<span class="popuptext" id="luxury_Insurance1PopupText">Compostion:<br>Price = $321 per month</span></span> per year.</p>   
+        </div>
+      </div>
+      <div class="col-md-1"></div>  
+      <div class="col-md-3 notActive" id="luxury_Insurance2" onclick="selectMultipleOptions('luxury_Insurance', 2)">
+        <img src="https://s.thestreet.com/files/tsc/v2008/photos/graphics/1026_metlife_snoopy_front_lead.jpg" class="img" width="100%"><br><br> 
+        <div>
+          <a href="https://www.metlife.com/" class="normalLink" target="_blank"><h4 id="luxury_Insurance2option">MetLife:</h4></a>
+          <p>It is literally an insurance company with employers as the targeted audience. Their whole point is for employer to sell insurance to employees so that the employee will stay in employer's company. There is also MetDental for the teeth.</p><br><br>
+          <p class="popup" onclick="popupFunction('luxury_Insurance', 2)">Price: $<span id="luxury_Insurance2price">3852<span class="popuptext" id="luxury_Insurance2PopupText">Compostion:<br>Price = $321 per month</span></span> per year.</p>   
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3 notActive" id="luxury_Insurance3" onclick="selectMultipleOptions('luxury_Insurance', 3)">
+        <img src="http://media.graytvinc.com/images/Allstate9.jpg" class="img"><br><br> 
+        <div>
+          <a href="https://www.allstate.com/" class="normalLink" target="_blank"><h4 id="luxury_Insurance3option">Allstate:</h4></a>
+          <p>Your everything insurance company. It cover both car and home. A good sellin gpoint is that AllState provides some refund if one can avoid car collision and fines. Which is good until you realize that is money they are making for free.</p><br><br>
+          <p class="popup" onclick="popupFunction('luxury_Insurance', 3)">Price: $<span id="luxury_Insurance3price">3852<span class="popuptext" id="luxury_Insurance3PopupText">Compostion:<br>Price = $321 per month</span></span> per year.</p>   
+        </div>
+      </div>  
+    </div><br><br>
+    <div class="row">
+      <div class="col-md-3 notActive" id="luxury_Insurance4" onclick="selectMultipleOptions('luxury_Insurance', 4)">
+        <img src="https://www.foglegroup.com/fg/wordpress/wp-content/uploads/2011/11/Flo_Color_3a_SMALL-1080x675.jpg" class="img" width="100%"><br><br> 
+        <div>
+          <a href="https://www.progressive.com/" class="normalLink" target="_blank"><h4 id="luxury_Insurance4option">Progressive:</h4></a>
+          <p>Mainly an auto insurance company, the third largest in the United States, Progressive also provide life and home insurance through third-party groups. How trustable will they be? It depend, get a quote and find out.</p><br><br>
+          <p class="popup" onclick="popupFunction('luxury_Insurance', 4)">Price: $<span id="luxury_Insurance4price">3852<span class="popuptext" id="luxury_Insurance4PopupText">Compostion:<br>Price = $321 per month</span></span> per year.</p>   
+        </div>
+      </div>
+      <div class="col-md-1"></div> 
+      <div class="col-md-3 notActive" id="luxury_Insurance5" onclick="selectMultipleOptions('luxury_Insurance', 5)">
+        <img src="https://i.forbesimg.com/media/lists/companies/state-farm_416x416.jpg" class="img"><br><br> 
+        <div>
+          <a href="https://www.statefarm.com/" class="normalLink" target="_blank"><h4 id="luxury_Insurance5option">State Farm:</h4></a>
+          <p>The biggest US auto insurance also offer life and home insurance. The biggest is the ability to have State Farm paid for food when stranded 50 miles from home. Is that really true? Well, it depend on the state and the situation.</p><br><br>
+          <p class="popup" onclick="popupFunction('luxury_Insurance', 5)">Price: $<span id="luxury_Insurance5price">3852<span class="popuptext" id="luxury_Insurance5PopupText">Compostion:<br>Price = $321 per month</span></span> per year.</p>   
+        </div>
+      </div>
+      <div class="col-md-1"></div> 
+      <div class="col-md-3 notActive" id="luxury_Insurance6" onclick="selectMultipleOptions('luxury_Insurance', 6)">
+        <img src="https://s3-media4.fl.yelpcdn.com/bphoto/fB0RrzKlz7ygPUexq2wE8Q/ls.jpg" class="img"><br><br> 
+        <div>
+          <a href="https://www.calif.aaa.com/" class="normalLink" target="_blank"><h4 id="luxury_Insurance6option">AAA:</h4></a>
+          <p>An expensive auto insurance that is quite notable around Pasadena. It provide towing services in case of collision. Note, towers will ask whether you have AAA insurance. A completely separate thing is AAA membership, which provide discount at certain repair shops.</p><br><br>
+          <p class="popup" onclick="popupFunction('luxury_Insurance', 6)">Price: $<span id="luxury_Insurance6price">3852<span class="popuptext" id="luxury_Insurance6PopupText">Compostion:<br>Price = $321 per month</span></span> per year.</p>   
+        </div>
+      </div> 
+    </div><br><br>
+  </div>  
+  <div class="buttonSpace">
+    <p class="inputTitle">Total Cost of Insurance:</p>   
+    <button onclick="calculateInput('insurance')" id="insuranceButton">Download</button><br>
+    <p id="insuranceButtonOutput" class="inputAnswer"><br></p>     
+  </div><br><br>  
+  <!-- End Row -->  
+      
+  <div id="scrollButton" onclick="topFunction()">Scroll to Top</div>   
+    
+  <script src="master.js"></script>  <!-- Should Always Run After HTML File -->
+  <script>
+    reSelectOption("luxury_Home");
+    reSelectOption("luxury_Automobile");  
+    reSelectMultipleOptions("luxury_Insurance");  
+  </script>
+</body>

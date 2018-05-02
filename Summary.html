@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+  <title>Cart of the Future</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="row" style="background: black;">
+      <div class="col-md-10" style="padding: 30px; padding-left: 40px;">  
+        <div class="pull-left">
+          <ul class="nav nav-pills">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="College.html">College</a></li>
+            <li><a href="Credit.html">Credit</a></li>
+            <li><a href="Family.html">Family</a></li>
+            <li><a href="Luxury.html">Luxury</a></li>
+            <li><a href="Budget.html">Budget</a></li>
+            <li><a href="Career.html">Career</a></li>
+          </ul>
+        </div> 
+      </div>
+      <a href="Summary.html">  
+        <div class="col-md-2" id="cart" onclick="checkOut();" style="pointer-events: none; cursor: default;">
+          <img src="http://www.thejordanplug.com/wp-content/uploads/2017/07/shoppingcart7.png" width="30%">
+          <h3 style="text-shadow: 2px 2px 2px red;">CheckOut</h3>
+        </div> 
+      </a>  
+    </div><br>  
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+      </div>  
+      <div class="col-md-3" id="nameSpace">
+      </div>  
+      <div class="col-md-3" id="optionSpace" style="text-align: center;">
+      </div>  
+      <div class="col-md-2" id="moneySpace" style="text-align: right;">
+      </div>  
+      <div class="col-md-2">
+      </div>  
+    </div>
+    <div class="row" style="border-top: 2px solid black; margin-top: 15px;">
+      <div class="col-md-2">
+      </div>  
+      <div class="col-md-3" id="nameSpace2">
+      </div>  
+      <div class="col-md-3" id="optionSpace2" style="text-align: center;">
+      </div>  
+      <div class="col-md-2" id="moneySpace2" style="text-align: right; margin-top: 15px;">
+      </div>  
+      <div class="col-md-2">
+      </div>  
+    </div><br>
+    <div class="row">
+      <div class="col-md-12" id="commentSpace"></div>  
+    </div><br><br><br>
+      
+    <div class="row">
+      <div class="col-md-2">
+      </div>  
+      <div class="col-md-3" id="nameSpace3">
+      </div>  
+      <div class="col-md-3" id="optionSpace3" style="text-align: center;">
+      </div>  
+      <div class="col-md-2" id="moneySpace3" style="text-align: right;">
+      </div>  
+      <div class="col-md-2">
+      </div>  
+    </div>
+    <div class="row" style="border-top: 2px solid black; margin-top: 15px;">
+      <div class="col-md-2">
+      </div>  
+      <div class="col-md-3" id="nameSpace4">
+      </div>  
+      <div class="col-md-3" id="optionSpace4" style="text-align: center;">
+      </div>  
+      <div class="col-md-2" id="moneySpace4" style="text-align: right; margin-top: 15px;">
+      </div>  
+      <div class="col-md-2">
+      </div>  
+    </div><br>
+    <div class="row">
+      <div class="col-md-12" id="commentSpace2"></div>  
+    </div><br><br><br><br><br>
+    <div class="row">
+      <div class="col-md-12" id="donationSpace">
+        <center>  
+          <h2>Donation:</h2>  
+          <p id="donationRequest"></p><br><br>  
+          <button class="undecidedButton" id="acceptDonation" onclick="acceptDonation()">Accept</button>
+          <button class="undecidedButton" id="declineDonation" onclick="declineDonation()">Decline</button><br><br>
+          <p id="donationComment"></p><br><br>
+          <div id="finalComment"></div>  
+        </center>    
+      </div>  
+    </div><br><br>
+      
+  </div>
+  <div id="scrollButton" onclick="topFunction()">Scroll to Top</div>
+    
+  <script src="master.js"></script>  <!-- Should Always Run After HTML File -->
+  <script>
+    //document.body.style.backgroundColor = "#FFFACD";  
+    checkOut();  
+    loadPage();  
+    loadComment();  
+  </script>  
+</body>

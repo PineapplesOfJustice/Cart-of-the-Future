@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+  <title>Cart of the Future</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div id="navBar" class="row" style="background: black;">
+      <div class="col-md-10" style="padding: 30px; padding-left: 40px;">  
+        <div class="pull-left">
+          <ul class="nav nav-pills">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="College.html">College</a></li>
+            <li><a href="Credit.html">Credit</a></li>
+            <li><a href="Family.html">Family</a></li>
+            <li><a href="Luxury.html">Luxury</a></li>
+            <li><a href="Budget.html">Budget</a></li>
+            <li class="active"><a href="Career.html">Career</a></li>
+          </ul>
+        </div> 
+      </div>
+      <a href="Summary.html">  
+        <div class="col-md-2" id="cart">
+          <img src="http://www.thejordanplug.com/wp-content/uploads/2017/07/shoppingcart7.png" width="30%">
+          <h3>CheckOut</h3>
+        </div> 
+      </a>  
+    </div><br>  
+      
+  <h1>Career:</h1>       
+  <div class="description">
+    <p>&emsp;Everybody have to work or do we? Clearly, there is Bill Gates, who is a multi-billionaire. His wealth alone can sustain an entire family for a lifetime. True, it is possible for a selected few, but even they had to rose to their position through innovative hard work and cooperation from an army of employees. By then, most become so attach to their works, it will easier to die than stop working. That is the true definition of a career. A job that you genuinely enjoy, not for money, but for fun. In this world, there are those who work to survive and those who survive to work. Here, I include three possible careers. If tehy don't appeal to you, feel free to search the <a href="https://www.bls.gov/" target="_blank" class="normalLink">US Bureau of Labor Statistic</a>'s database for other selections.</p><br>    
+  </div><br>
+  <div class="container">
+    <!-- Row -->  
+    <div class="row">
+      <div class="col-md-3 notActive" id="career1" onclick="selectOption('career', 1)">
+        <img src="https://seeklogo.com/images/Y/youtube-logo-51CDA55827-seeklogo.com.png" class="img"><br><br> 
+        <div>
+          <a href="www.pennapowers.com/how-much-do-youtubers-make/" class="normalLink" target="_blank"><h4 id="career1option">Youtuber:</h4></a>
+          <p>As a millenial, one will probably have watch YouTube and like it. All those videos and each one generate money? Just make walkthrough of games, add advertisements to it, and watch as the money come rolling. Fun, easy to learn, hard to excel.</p><br><br>
+          <p class="popup">Salary: $0<span class="popuptext">Composition:<br>18¢ per 30-seconds advertisement</span><sup>+</sup> per year.</p> 
+          <span id="career1price" style="display: none;">1000</span>  
+        </div>
+      </div>
+      <div class="col-md-1"></div>  
+      <div class="col-md-3 notActive" id="career2" onclick="selectOption('career', 2)">
+        <img src="https://www.javatpoint.com/images/javascript/javascript_logo.png" class="img"><br><br> 
+        <div>
+          <a href="https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm" class="normalLink" target="_blank"><h4 id="career2option" style="font-size: 32px;">Computer Programmer:</h4></a>
+          <p>It is time to put them APP Academy lessons to good use. As a programmer, one will likely sit by a desktop and program. Alone, or as a team with others programmers and/or graphic designers. There are no limit. Think it and do it!</p><br><br>
+          <p>Salary: $<span id="career2price">79840</span> per year.</p>   
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3 notActive" id="career3" onclick="selectOption('career', 3)">
+        <img src="https://ih1.redbubble.net/image.53602041.8342/sticker,375x360-bg,ffffff.png" class="img"><br><br> 
+        <div>
+          <a href="https://www.thebalance.com/chemist-career-information-525995" class="normalLink" target="_blank"><h4 id="career3option">Chemist:</h4></a>
+          <p>If one enjoy chemistry and playing around with volatile elements, chemistry is a well-paying field. If one is lucky, he might just discover a new compound or element. Although, there are rules, the ability to think outside the box is essential to unearthing new breakthrough.</p><br><br>
+          <p>Price: $<span id="career3price">75420</span> per year.</p>   
+        </div>
+      </div>
+    </div> 
+    <!-- End Row -->  
+  </div><br><br>
+ 
+  <div class="description">
+    <p style="margin-bottom: 10px;">&emsp;Unfortunately, though we have a set salary, quite a large portion, 16.5%, is lost through taxes. When one speak of gross salary, they refer to the salary before tax reduction. Net salary is the gross salary after it experiences the tax cut. These taxes range from state to state, but they serve the same functions. These cuts will fund the career and/or free health care, along with the public education system. Are they beneficial? Arguably yes because the biggest cuts are taken from America's top 1% and we are not in that percentage. Their cuts can reach a whopping 30%! Here is calculator for California's taxes. If you wish to find net salary in another state, I suggest following this website to the guideline in the <a href="https://taxfoundation.org/state-individual-income-tax-rates-brackets-2017/" class="normalLink" target="_blank">Tax Foundation</a>.</p>  
+  </div>    
+  <div class="buttonSpace popup">
+    <p class="inputTitle">Convert Gross Yearly Salary:</p>  
+    <input type="text" id="careerButtonInput" value="" placeHolder="Salary"> 
+    <button onclick="calculateInput('career')" id="careerButton">Convert</button><br>
+    <p id="careerButtonOutput" class="inputAnswer"><br><br><br></p>     
+    <span class="popuptextRight" id="careerButtonPopupText">Compostion:<br>Federal income: 7%<br>Social security: 6%<br>Medicare:  1.5%<br>CA state income: 1%<br>CA state DI: 1%</span>
+  </div><br>
+      
+  <h1>Retirement Plan:</h1>       
+  <div class="description">
+      <p>&emsp;Is it ever too early to talk about retirement? I think no. It is the preference of a large majority to have peace before death. Thus, the US governemnt created many a few plans to provide retirement benefits for the old, which includes the <a href="https://nb.fidelity.com/public/nb/401k/home" target="_blank" class="normalLink">401K</a> and the <a href="https://www.thebalance.com/understanding-your-403-b-plan-357122" target="_blank" class="normalLink">403B</a> plan along with the <a href="https://www.ssa.gov/" target="_blank" class="normalLink">Social Security</a> system by Roosevelt. Social Security cut young, working people salaries to fund the accounts of retired, old people. Made sense, but quite problematic when the US won't let people die and channel most of its health allowance to preserve the old and frail. By the time that we are old, social security won't be enough. The 401K plan is an alternative/supplement to the social security. It is founded in 1978, with the most prominent feature being investing tax-free, or at least half tax-free. The account must be initiated by the owner's employer and either one can invest into the account. The initial investments are untaxable until withdrawal, which allow the compund interest to increase exponentially. The <a href="http://time.com/money/4258994/traditional-401k-roth-401k-retirement/" class="normalLink" target="_blank"></a>Roth 401K plan is another alternative. While the investments are taxes, the withdrawals are what it is. Yes, both plan will cut into your current salary, but provide benefits much later on. The 403B plan is also quite similar. Its main difference with the 401K plan is the type of employers who can initiate the account. The 401K plan can be initiated by any corporations, whereas the 403 plan is limited to teachers, non-profit groups, religious groups, and governmental organsizations. Does any of this interest you? It should because it will matter. Especially since US family have a tendency to be quite independent.</p><br>    
+  </div><br>
+  <div class="container">
+    <!-- Row -->  
+    <div class="row">
+      <div class="col-md-3 notActive" id="retirement1" onclick="selectOption('retirement', 1)">
+        <img src="https://cdn1.businessmanagementdaily.com/res/images/bmd_homepage/iStock_RothEggInNest_350.jpg" class="img" width="100%"><br><br> 
+        <div>
+          <a href="https://www.investopedia.com/terms/r/roth401k.asp" class="normalLink" target="_blank"><h4 id="retirement1option">Roth 401K:</h4></a>
+          <p>Deduct tax first before storing the investment for later withdrawal. However, once stored, it will accumulate tax-free. Even the withdrawals themselves are untaxable once you past the age of 59. Good if taxes are expected to be high in later years.</p><br><br>
+          <p>Price: 10% of gross salary.</p> 
+          <span id="retirement1price" style="display: none;">3000</span>  
+        </div>
+      </div>
+      <div class="col-md-1"></div>  
+      <div class="col-md-3 notActive" id="retirement2" onclick="selectOption('retirement', 2)">
+        <img src="http://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2015/12/17/20151217-055647_U2908_M111798_da15.jpg?itok=HWtl40Mg" class="img" width="100%"><br><br> 
+        <div>
+          <a href="https://nb.fidelity.com/public/nb/401k/home" class="normalLink" target="_blank"><h4 id="retirement2option" style="font-size: 32px;">401K:</h4></a>
+          <p>Unlike its Roth alternative, the traditional 401K is only taxable during withdrawals. This difference make the original plan better when taxes are high at current time period versus later. Plus, no tax during investments just meant more money to be compounded monthly.</p><br><br>
+          <p>Price: 10% of gross salary.</p> 
+          <span id="retirement2price" style="display: none;">3000</span> 
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3 notActive" id="retirement3" onclick="selectOption('retirement', 3)">
+        <img src="https://warwickfa.com/wp-content/uploads/2012/09/icon-teacher-403b1.png" class="img"><br><br> 
+        <div>
+          <a href="https://www.thebalance.com/understanding-your-403-b-plan-357122" class="normalLink" target="_blank"><h4 id="retirement3option">403B:</h4></a>
+          <p>Quite similar to 401K plan, the 403B plan is untaxable until withdrawal. Originally called Tax-Sheltered Annuity Plan, this is only offered to non-profit organizations and teachers. Beyond the cool name, this is more limited than 401K plan.</p><br><br>
+          <p>Price: 10% of gross salary.</p> 
+          <span id="retirement3price" style="display: none;">3000</span>
+        </div>
+      </div>
+    </div>
+    <!-- End Row -->  
+  </div><br><br>
+  <div class="buttonSpace">  
+    <p id="jobSalary" class="inputAnswer">Salary: $0.00</p><br>
+    <p id="planContribution" class="inputAnswer">Contribution: $0.00</p>  
+  </div><br><br>
+    
+  <div id="scrollButton" onclick="topFunction()">Scroll to Top</div>  
+    
+  <script src="master.js"></script>  <!-- Should Always Run After HTML File -->
+  <script>
+    reSelectOption("career");  
+    reSelectOption("retirement");  
+  </script>
+</body>

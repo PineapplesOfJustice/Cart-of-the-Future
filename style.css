@@ -1,0 +1,335 @@
+/*transform: scaleX(-1);*/
+
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+body{
+  background-color: #fce079;
+  overflow-x: hidden;
+}
+
+*{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1{    
+  font-size: 40px;
+  color: black;
+  font-family: Special Elite;
+  text-decoration: underline;
+  text-shadow: -0.5px 0.5px 1px white;
+  margin-left: 15px;
+}
+
+h2{
+  font-size: 30px;
+  color: black;
+  font-family: Special Elite;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+h2.small{
+  font-size: 22px;
+  color: black;
+  font-family: Special Elite;
+  text-decoration: none;
+}
+
+h3{
+  color: white;
+  font-family: Rock Salt;
+}
+
+h4{
+  font-size: 35px;
+  color: black;  
+  font-family:Annie Use Your Telescope;
+  display: inline;  
+}
+
+.col-md-12{
+  font-family: Merienda;  
+}
+
+p{
+  font-size: 20px;
+  color: black;  
+  font-family: Annie Use Your Telescope;   
+  display: inline;
+  word-wrap: break-word;  
+}
+
+input{
+  border-right: solid blue 2px;
+  background: #eef7fa;
+  text-align: center;
+  font-family: Merienda;
+}
+
+button{
+  color: #138808;
+  font-size: 13px;
+  border: 2px solid green;
+  border-radius: 2px;
+  cursor: pointer;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-left: 7px;
+}
+
+.undecidedButton, #acceptDonation, #declineDonation{
+  color: black;
+  font-size: 20px;
+  border: 3px solid black;
+  background-color: white;  
+}
+
+.yesButton, #acceptDonation:hover{
+  color: green;
+  font-size: 20px;
+  border: 3px solid green;
+  background-color: white;
+}
+
+.noButton, #declineDonation:hover{
+  color: red;
+  font-size: 20px;
+  border: 3px solid red;
+  background-color: white;
+}
+
+.description{
+  padding: 15px;  
+  padding-top: 0px;  
+}
+
+.buttonSpace{
+  padding: 13px;
+  margin-left: 35%;
+  margin-right: 35%;
+  border: 2px solid white;
+  background-color: black;  
+}
+
+.mortageSpace{
+  padding: 13px;
+  margin-left: 10%;
+  margin-right: 0%;
+  border: 2px solid white;
+  background-color: black;  
+}
+
+.inputTitle, .inputAnswer{
+  color: white;  
+}
+
+img{
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;   
+}
+
+div{
+  position: relative;
+}
+
+.img{
+   object-fit: cover;
+   height: 200px;
+   border-bottom: 4px solid black; 
+}  /*Only to Apply to Image in div*/
+
+div .notActive{
+  border: 6px solid black;
+  background-color: white;
+  height: 550px;
+  padding: 0px;    
+  cursor: pointer;     
+} /*Non-Selected Option*/
+
+div .notActive div{
+  margin: 10px;
+} /*Non-Selected Option*/
+
+div .optionActive{
+  border: 6px solid limegreen;
+  background-color: white;
+  height: 550px;
+  padding: 0px;    
+  cursor: pointer;  
+} /*Selected Option*/
+
+div .optionActive div{
+  margin: 10px;
+} /*Selected Option*/
+
+#cart *{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  cursor: pointer;   
+}  /*CheckOut Button*/
+
+.carousel-indicators li {
+  display: inline-block;
+  border: none;
+  border-radius: 50%;
+  background-color: #ff661a;
+  box-shadow: inset 1px -1px 1px 2px rgba(0,0,0,0.5);    
+} /* Carousel */
+
+.carousel-indicators .active {
+  background-color: #80ff80;
+}
+
+/* Will be better if sticky property work */
+#carouselId{
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 5px solid black;  
+  width: 450px;  
+  position: relative;  
+  top: 10px;
+  left: -50px;  
+}
+
+#carouselId img{
+  border: 1px solid black;  
+}
+
+#scrollButton{
+  color: white;
+  font-family: Special Elite;
+  font-size: 10px;  
+  text-align: center;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 2px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px; 
+  padding: 5px;
+  min-width: 15%;
+  cursor: pointer;
+  display: none;  
+}
+
+#scrollButton:hover{
+  color: skyblue;  
+}
+
+.cartButton{
+  background-color: white;  
+}
+
+.cartButton:hover{
+  color: white;
+  background-color: #138808;  
+}
+
+.sourceLink{
+  color: black;  
+  text-shadow: -0.5px 0.5px 1px white;
+  font-family: Special Elite;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+#rubricLink, .normalLink{
+  color: black;
+}
+
+#rubricLink:hover, .sourceLink:hover, .normalLink:hover{
+  text-decoration: underline;
+}
+
+/* W3SCHOOL codes*/
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears bottom) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 180px;
+  min-height: 100px;  
+  background-color: #001a00;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -70px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #001a00 transparent;
+}
+
+/* The actual popup (appears right) */
+.popup .popuptextRight {
+  visibility: hidden;
+  width: 180px;
+  min-height: 100px;  
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  left: 105%;
+}
+
+/* Popup arrow */
+.popup .popuptextRight::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -4px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+/* Toggle this class when clicking to make the popuptext solid */
+.popup .show {
+  visibility: visible;
+}
+
+/* Allow the popup to show on hover */
+.popup:hover .popuptext, .popup:hover .popuptextRight{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*https://css-tricks.com/multiple-class-id-selectors/*/
+/*This page could be pretty fun to use*/

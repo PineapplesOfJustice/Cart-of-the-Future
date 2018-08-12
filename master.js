@@ -551,10 +551,10 @@ function popupFunction(subject, option) {
 //Made the Carousel "stick" to top of the home page.
 function fixCarousel(){
   if(document.body.scrollTop > 70 || document.documentElement.scrollTop > 70){
-    document.getElementById("carouselId").setAttribute("style", "position: fixed; top: 78px; left: 55px;");  
+    document.getElementById("carouselId").setAttribute("style", "position: fixed; top: 78px; left: 110px;");  
   }  
   else{
-    document.getElementById("carouselId").setAttribute("style", "position: relative; top: 10px; left: -50px;");  
+    document.getElementById("carouselId").setAttribute("style", "position: relative; top: 10px; left: -80px;");  
   }  
 }
 

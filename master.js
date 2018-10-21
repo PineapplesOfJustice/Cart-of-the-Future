@@ -548,7 +548,10 @@ function popupFunction(subject, option) {
     document.getElementById(subject + option).click();
 }
 
+
+/*
 //Made the Carousel "stick" to top of the home page.
+//Problem solved because the sticky property need to be apply in the column div not the carousel div.
 function fixCarousel(){
   if(document.body.scrollTop > 70 || document.documentElement.scrollTop > 70){
     document.getElementById("carouselId").setAttribute("style", "position: fixed; top: 78px; left: 110px;");  
@@ -557,6 +560,8 @@ function fixCarousel(){
     document.getElementById("carouselId").setAttribute("style", "position: relative; top: 10px; left: -80px;");  
   }  
 }
+*/
+
 
 //Used to replicate the concept of clicking a button by pressing enter in the input field.
 document.addEventListener('keypress', pressButton);

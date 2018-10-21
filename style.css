@@ -208,6 +208,13 @@ div .optionActive div{
   border: 1px solid black;  
 }
 
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;    
+}
+
+
 #scrollButton{
   color: white;
   font-family: Special Elite;
